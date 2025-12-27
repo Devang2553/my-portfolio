@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import dpLogo from "@/assets/dp-logo.png";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -68,10 +69,13 @@ const Navbar = () => {
                 e.preventDefault();
                 handleNavClick("#home");
               }}
-              className="text-xl md:text-2xl font-bold"
+              className="flex items-center gap-2"
             >
-              <span className="gradient-text">Devang</span>
-              <span className="text-foreground">.dev</span>
+              <img src={dpLogo} alt="DP Logo" className="h-10 w-10 md:h-12 md:w-12" />
+              <span className="text-lg md:text-xl font-bold">
+                <span className="gradient-text">Devang</span>
+                <span className="text-foreground">.dev</span>
+              </span>
             </a>
 
             {/* Desktop Navigation */}
