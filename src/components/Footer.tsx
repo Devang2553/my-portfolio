@@ -43,12 +43,6 @@ const Footer = () => {
               <Mail size={18} />
             </a>
           </div>
-
-          {/* Made with love */}
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart size={14} className="text-primary fill-primary" />{" "}
-            using React
-          </p>
         </div>
       </div>
     </footer>
