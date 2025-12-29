@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# 🚀 React Developer Portfolio
 
-## Project info
+Welcome to my personal portfolio — a curated space where **code, craft, and consistency** come together.
+This repository showcases my professional journey as a **Frontend / React Developer**, highlighting real-world projects, production-level applications, and the technologies I work with every day.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This portfolio is not just about visuals — it reflects **problem-solving, scalability, and clean architecture**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧠 About Me
 
-**Use Lovable**
+I’m a passionate **React Developer** focused on building responsive, maintainable, and user-centric web applications.
+I enjoy turning complex requirements into clean, functional interfaces and continuously sharpening my skills with modern JavaScript ecosystems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+My work spans **startup environments, enterprise dashboards, and AI-driven platforms**, where performance and clarity matter.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend:** React.js, TypeScript, JavaScript (ES6+)
+- **Styling:** CSS3, Responsive Design, Modern UI Practices
+- **State Management:** Context API, Redux (where applicable)
+- **Backend Exposure:** Node.js, REST APIs
+- **Tools & Platforms:** Git, GitHub, Cloud Deployment
+- **Other:** API Integration, Authentication, Role-Based Access
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Featured Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🔹 AP Telecom Pty Ltd
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Role:** Frontend Developer
+A technology and consulting platform focused on telecommunications, security services, and web development.
+Worked on responsive UI, performance optimization, and scalable frontend architecture.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🔹 CareOps.ai
 
-**Edit a file directly in GitHub**
+**Role:** Frontend Developer
+An AI-powered healthcare platform that automates referral intake and admission workflows for home health and hospice agencies.
+Contributed to building secure, real-time, HIPAA-compliant user interfaces with clean data flow.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 🔹 Fabios
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Role:** Master Admin (Frontend Focus)
+A smart operations platform for the food & beverage industry.
+Worked exclusively on the **Master Admin panel**, handling advanced dashboards, workflows, permissions, and system-level controls.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ✨ What You’ll Find Here
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Clean and scalable React architecture
+- Real production-grade projects
+- Fully responsive layouts (mobile, tablet, desktop)
+- Practical use of TypeScript and modern JavaScript
+- Thoughtful UI with performance in mind
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📈 Philosophy
 
-## Can I connect a custom domain to my Lovable project?
+I believe great software is built with:
 
-Yes, you can!
+- **Discipline over motivation**
+- **Clarity over complexity**
+- **Consistency over intensity**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Every line of code here reflects growth, learning, and the hunger to become better than yesterday.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 📬 Contact
+
+If you’d like to collaborate, discuss opportunities, or just talk tech:
+
+📧 Email: devang6314@gmail.com
+🌐 Portfolio: https://www.linkedin.com/in/devang-prajapati-4bb793214/
+💼 LinkedIn: _[Profile link]_

@@ -49,7 +49,8 @@ const SkillsSection = () => {
             Skills & <span className="gradient-text">Technologies</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            A comprehensive toolkit refined over 2+ years of professional development
+            A comprehensive toolkit refined over 2+ years of professional
+            development
           </p>
         </motion.div>
 
@@ -97,7 +98,11 @@ const SkillsSection = () => {
                 <motion.div
                   initial={{ width: 0 }}
                   animate={isInView ? { width: `${skill.level}%` } : {}}
-                  transition={{ duration: 1, delay: 0.5 + index * 0.05, ease: "easeOut" }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.5 + index * 0.05,
+                    ease: "easeOut",
+                  }}
                   className="h-full rounded-full bg-gradient-to-r from-primary to-[hsl(199,89%,48%)]"
                 />
               </div>
@@ -114,7 +119,7 @@ const SkillsSection = () => {
         >
           {[
             { value: "2+", label: "Years Experience" },
-            { value: "20+", label: "Projects Completed" },
+            { value: "5+", label: "Projects Completed" },
             { value: "3", label: "Companies Worked" },
             { value: "100%", label: "Client Satisfaction" },
           ].map((stat, index) => (
@@ -122,7 +127,11 @@ const SkillsSection = () => {
               <motion.div
                 initial={{ scale: 0 }}
                 animate={isInView ? { scale: 1 } : {}}
-                transition={{ duration: 0.5, delay: 0.9 + index * 0.1, type: "spring" }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.9 + index * 0.1,
+                  type: "spring",
+                }}
                 className="text-4xl sm:text-5xl font-bold gradient-text mb-2"
               >
                 {stat.value}

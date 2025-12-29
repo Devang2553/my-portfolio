@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Send, Loader2, CheckCircle, Github, Linkedin } from "lucide-react";
+import {
+  Mail,
+  Send,
+  Loader2,
+  CheckCircle,
+  Github,
+  Linkedin,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -42,7 +49,7 @@ const ContactSection = () => {
       // 2. Create an Email Service (e.g., Gmail)
       // 3. Create an Email Template with variables: {{from_name}}, {{from_email}}, {{message}}
       // 4. Replace the IDs below with your actual service, template, and public key
-      
+
       await emailjs.send(
         "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
         "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
@@ -64,7 +71,8 @@ const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Something went wrong",
-        description: "Please try again or email me directly at devang6314@gmail.com",
+        description:
+          "Please try again or email me directly at devang6314@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -75,7 +83,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-glow opacity-20" />
-      
+
       <div className="section-container relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -87,8 +95,8 @@ const ContactSection = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Have a project in mind or just want to say hello? 
-            I'd love to hear from you. Let's create something amazing together.
+            Have a project in mind or just want to say hello? I'd love to hear
+            from you. Let's create something amazing together.
           </p>
         </motion.div>
 
@@ -100,7 +108,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-            
+
             <div className="space-y-6 mb-8">
               <a
                 href="mailto:devang6314@gmail.com"
@@ -142,9 +150,10 @@ const ContactSection = () => {
                 💼 Currently accepting new projects
               </p>
               <p className="text-muted-foreground text-sm">
-                Available for freelance work and full-time opportunities. 
-                Let's discuss how I can help grow your business.
+                Available for freelance work Let's discuss how I can help grow
+                your business.
               </p>
+              {/*and full-time opportunities. */}
             </div>
           </motion.div>
 
@@ -162,7 +171,8 @@ const ContactSection = () => {
                   </div>
                   <h4 className="text-xl font-bold mb-2">Message Sent!</h4>
                   <p className="text-muted-foreground mb-6">
-                    Thank you for reaching out. I'll get back to you as soon as possible.
+                    Thank you for reaching out. I'll get back to you as soon as
+                    possible.
                   </p>
                   <Button
                     variant="outline"
@@ -172,7 +182,11 @@ const ContactSection = () => {
                   </Button>
                 </div>
               ) : (
-                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
+                >
                   <div>
                     <label
                       htmlFor="name"

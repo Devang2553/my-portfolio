@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/devangprajapati"
+              href="https://github.com/Devang2553"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
@@ -29,7 +29,7 @@ const Footer = () => {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/in/devangprajapati"
+              href="https://www.linkedin.com/in/devang-prajapati-4bb793214/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
@@ -46,7 +46,8 @@ const Footer = () => {
 
           {/* Made with love */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart size={14} className="text-primary fill-primary" /> using React
+            Made with <Heart size={14} className="text-primary fill-primary" />{" "}
+            using React
           </p>
         </div>
       </div>

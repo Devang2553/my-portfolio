@@ -17,44 +17,37 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce solution with product management, cart functionality, and secure checkout process.",
-    tech: ["React", "TypeScript", "Redux", "Node.js", "MongoDB"],
-    type: "office",
-    liveUrl: "#",
-  },
-  {
-    title: "Real Estate Dashboard",
-    description: "Analytics dashboard for property management with interactive charts, property listings, and lead tracking.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API"],
-    type: "office",
-    liveUrl: "#",
-  },
-  {
-    title: "Healthcare Portal",
-    description: "Patient management system with appointment scheduling, medical records, and telemedicine integration.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "AWS"],
-    type: "office",
-    liveUrl: "#",
-  },
-  {
-    title: "Restaurant Ordering App",
-    description: "Mobile-first food ordering application with menu management, order tracking, and payment integration.",
-    tech: ["React", "Redux", "Stripe", "Firebase"],
+    title: "AP Telecom Pty Ltd",
+    description:
+      "AP Telecom Pty Ltd is a technology and consulting company focused on delivering smart digital solutions in telecommunications, security services, and web development. The company helps businesses and organizations build reliable, scalable, and future-ready digital infrastructure through modern technology and strategic execution.",
+    tech: ["React", "TypeScript", "Tailwind"],
     type: "freelance",
-    liveUrl: "#",
+    liveUrl: "https://aptelecom.tech/",
   },
   {
-    title: "Portfolio for Photographer",
-    description: "Stunning visual portfolio showcasing photography work with gallery views and client inquiry forms.",
-    tech: ["React", "Framer Motion", "Tailwind CSS"],
-    type: "freelance",
-    liveUrl: "#",
+    title: "CareOps.ai",
+    description:
+      "CareOps.ai is an intelligent AI-powered platform that helps home health and hospice agencies streamline referral intake and patient admission workflows. It replaces manual processes with automated, secure, real-time workflows that accelerate admissions, improve collaboration, and maintain HIPAA-compliant data handling.",
+    tech: [
+      "React",
+      "TypeScript",
+      "SCSS",
+      "React-Query",
+      "React mention",
+      "Material UI",
+      "Data table",
+      "Pdf viewer",
+      "Chart Js",
+    ],
+    type: "office",
+    liveUrl: "https://careops.ai/",
   },
+
   {
-    title: "Fitness Tracking App",
-    description: "Personal fitness companion with workout plans, progress tracking, and nutrition logging features.",
-    tech: ["React", "TypeScript", "Chart.js", "Node.js"],
+    title: "Fabios",
+    description:
+      "Fabios is a smart, industry-focused platform that streamlines food and beverage operations — from production planning and inventory management to quality control and workflow optimization. It brings real-time visibility, data-driven insights, and task automation to kitchens, factories, restaurants, bakeries, catering companies, and event venues.",
+    tech: ["Next.Js", "Zod", "Material UI", "Firebase", "React query"],
     type: "freelance",
     liveUrl: "#",
   },
@@ -73,7 +66,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 relative">
       <div className="absolute inset-0 bg-glow opacity-20" />
-      
+
       <div className="section-container relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -85,15 +78,24 @@ const ProjectsSection = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-8">
-            A selection of projects I've worked on across different companies and as a freelancer
+            A selection of projects I've worked on across different companies
+            and as a freelancer
           </p>
 
           {/* Filter Buttons */}
           <div className="flex justify-center gap-4 flex-wrap">
             {[
               { value: "all", label: "All Projects", icon: null },
-              { value: "office" as ProjectType, label: "Office Projects", icon: Briefcase },
-              { value: "freelance" as ProjectType, label: "Freelance", icon: User },
+              {
+                value: "office" as ProjectType,
+                label: "Office Projects",
+                icon: Briefcase,
+              },
+              {
+                value: "freelance" as ProjectType,
+                label: "Freelance",
+                icon: User,
+              },
             ].map((btn) => (
               <Button
                 key={btn.value}
@@ -125,27 +127,35 @@ const ProjectsSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-[hsl(199,89%,48%)]/20" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-4xl font-bold text-foreground/20">
-                      {project.title.split(" ").map(w => w[0]).join("")}
+                      {project.title
+                        .split(" ")
+                        .map((w) => w[0])
+                        .join("")}
                     </span>
                   </div>
-                  
+
                   {project.videoUrl && (
                     <button
                       onClick={() => setSelectedVideo(project.videoUrl!)}
                       className="absolute inset-0 flex items-center justify-center bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                        <Play className="text-primary-foreground ml-1" size={24} />
+                        <Play
+                          className="text-primary-foreground ml-1"
+                          size={24}
+                        />
                       </div>
                     </button>
                   )}
-                  
+
                   <div className="absolute top-4 right-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      project.type === "office" 
-                        ? "bg-primary/20 text-primary" 
-                        : "bg-secondary text-secondary-foreground"
-                    }`}>
+                    <span
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        project.type === "office"
+                          ? "bg-primary/20 text-primary"
+                          : "bg-secondary text-secondary-foreground"
+                      }`}
+                    >
                       {project.type === "office" ? "Office" : "Freelance"}
                     </span>
                   </div>
@@ -159,7 +169,7 @@ const ProjectsSection = () => {
                   <p className="text-muted-foreground text-sm mb-4 flex-1">
                     {project.description}
                   </p>
-                  
+
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((t) => (
